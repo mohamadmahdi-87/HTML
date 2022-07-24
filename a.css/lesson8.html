@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title> 
+     <style>
+       #d1 a{
+            color: green;
+        }
+        #d1
+        {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        #d1 > a
+        {
+          color: rgb(255, 255, 255);
+        }
+        #d1+a{
+            color: lime;
+        }
+        #d1~a{
+        color: lime;
+        }
+     </style>
+</head>
+<body>
+    <div id="d1">
+        <a href="#">click here 1</a>
+        <p>
+            <a href="#">click here 4</a>
+        </p>
+    </div>
+    <a href="#">click here 2</a>
+    <a href="#">click here 3</a>
+</body>
+</html>
