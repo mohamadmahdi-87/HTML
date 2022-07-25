@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        ul
-        {
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            width: 200px;
-            background-color: yellow;
+        body {
+            margin: 0%;
+
         }
 
-        
-        li a
-        {
-            display: block;
-            color: navy;
-            padding: 8px 0px 8px 16px;
+        a {
             text-decoration: none;
+            background-color: red;
+            
+        }
 
+        li {
+            list-style-type: none;
+            display: inline;
         }
-        li a:hover
-        {
-            background-color: black;
-            color: gold;
+        ul{
+            
+            width: 500px;
         }
-        li a:active
-        {
-           
+
+        #nav {
+            position: relative;
+        }
+
+        #nav_left {
+            position: absolute;
+            left: 0px;
+        }
+
+        #nav_right {
+            position: absolute;
+            right: 0px;
+        }
+        #content{
+            height: 1500px;
         }
     </style>
 </head>
+
 <body>
-    <ul>
-        <li>
-            <a href="#">html</a>
-        </li>
-        <li>
-            <a href="#">css</a>
-        </li>
-        <li>
-            <a href="#">js</a>
-        </li>
-        <li>
-            <a href="#">php</a>
-        </li>
-        <li>
-            <a href="#">seo</a>
-        </li>
-    </ul>
+    <section id="nav">
+        <div id="nav_left">
+            <ul>
+                <li>
+                    <a href="#">html</a>
+                </li>
+                <li>
+                    <a href="#">css</a>
+                </li>
+                <li>
+                    <a href="#">js</a>
+                </li>
+                <li>
+                    <a href="#">php</a>
+                </li>
+                <li>
+                    <a href="#">seo</a>
+                </li>
+            </ul>
+        </div>
+        <div id="nav_right">
+            <ul>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">sign up</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div id="content">
+            salaam
+        </div>
+    </section>
 </body>
+
 </html>
